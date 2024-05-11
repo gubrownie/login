@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+    <style>
+        .rotate {
+            animation: spin 1s ease forwards;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(720deg); }
+        }
+    </style>
 </head>
 <body>
     <div class="tarja"></div>
@@ -13,7 +23,7 @@
         <div class="retangulo1">
             <img src="logo.png" width="180px" >
             <h1 id="titulo">LOGIN</h1>
-            <img src="usuario.png" width="70px">
+            <img id="userIcon" src="usuario.png" width="70px">
             <div class="escritas">
                 <input type="number" id="barra1" placeholder="CNPJ">
                 <input type="password" id="barra2" placeholder="Senha">
@@ -29,5 +39,18 @@
             <div class="classe"></div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("botao2").addEventListener("click", function() {
+            var cnpj = document.getElementById("barra1").value;
+
+            document.getElementById("titulo").innerText = "Bem-vindo!";
+            document.getElementById("userIcon").classList.add("rotate");
+
+            setTimeout(function() {
+                window.location.href = "principal.html"; // Redireciona para principal.html após 1 segundo
+            }, 1000); // Tempo de espera para a animação de rotação
+        });
+    </script>
 </body>
 </html>
