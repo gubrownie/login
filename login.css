@@ -1,59 +1,68 @@
-.retangulo1{
+.retangulo1 {
     width: 40%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}   
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
-.retangulo2{
+
+.retangulo2 {
     width: 60%;
     height: 100vh;
     background: url(foto_pele.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}   
-.tudo{
+}
+
+.tudo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.classe{
+
+.classe {
     background-color: rgba(255, 255, 0, 0.322);
     position: absolute;
     width: 60%;
     height: 100vh;
 }
-#titulo{
+
+#titulo {
     font-size: 50px;
     margin-top: 30px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px black;
 }
+
 input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
-.escritas{
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.escritas {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
 }
+
 #barra1,
-#barra2{
+#barra2 {
     outline: none;
     width: 270px;
     height: 30px;
@@ -63,34 +72,39 @@ input[type="number"]::-webkit-inner-spin-button,
     border: 3px solid #21468A;
     padding: 5px;
     font-size: 17px;
- 
-    
 }
-#barra2{
+
+#barra2 {
     margin-top: 20px;
 }
+
 #barra1::placeholder,
-#barra2::placeholder{
+#barra2::placeholder {
     color: #21468A;
     font-weight: bold;
 }
-.esqueci{
+
+.esqueci {
     width: 270px;
     height: 20px;
     margin-top: 10px;
 }
+
 .esqueci p {
     text-align: right;
     font-size: 17px;
 }
-.esqueci a{
+
+.esqueci a {
     text-decoration: none;
     color: black;
 }
-.esqueci a:hover{
+
+.esqueci a:hover {
     color: red;
 }
-.botoes{
+
+.botoes {
     margin-top: 40px;
     height: 100px;
     width: 320px;
@@ -98,18 +112,19 @@ input[type="number"]::-webkit-inner-spin-button,
     align-items: center;
     display: flex;
 }
+
 #botao1,
-#botao2{
+#botao2 {
     width: 140px;
     height: 50px;
     border-radius: 30px;
     border: 3px solid #3B9C62;
     color: #3B9C62;
     font-size: 17px;
-    
     cursor: pointer;
 }
-.tarja{
+
+.tarja {
     width: 200px;
     height: 100px;
     background-color: #21468A;
@@ -118,7 +133,8 @@ input[type="number"]::-webkit-inner-spin-button,
     top: -30px;
     left: -100px;
 }
-.tarja2{
+
+.tarja2 {
     width: 200px;
     height: 100px;
     background-color: #3B9C62;

@@ -21,7 +21,7 @@
     <div class="tarja"></div>
     <div class="tudo">
         <div class="retangulo1">
-            <img src="logo.png" width="180px" >
+            <img src="logo.png" width="180px">
             <h1 id="titulo">LOGIN</h1>
             <img id="userIcon" src="usuario.png" width="70px">
             <div class="escritas">
@@ -50,6 +50,10 @@
             setTimeout(function() {
                 window.location.href = "principal.html"; // Redireciona para principal.html após 1 segundo
             }, 1000); // Tempo de espera para a animação de rotação
+        });
+
+        document.getElementById("botao1").addEventListener("click", function() {
+            window.location.href = "cadastro.html"; // Redireciona para cadastro.html ao clicar no botão Cadastro
         });
     </script>
 </body>
